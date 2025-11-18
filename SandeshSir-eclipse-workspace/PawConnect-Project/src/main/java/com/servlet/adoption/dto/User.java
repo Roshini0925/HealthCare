@@ -1,63 +1,46 @@
 package com.servlet.adoption.dto;
 
-public class User {
-	
-	private String username;
-	private String email;
-	private long phone;
-	private String password;
-	private String Address;
+	public class User {
+	    private String fullName;
+	    private String email;
+	    private Long phone;
+	    private String password;
 
-	public User() {
-		
-	}
-	public User(String username, String email, long phone, String password, String address) {
-		
-		this.username = username;
-		this.email = email;
-		this.phone = phone;
-		this.password = password;
-		Address = address;
-	}
+	    public User() {}
 
-	public String getUsername() {
-		return username;
-	}
+	    public User(String fullName, String email, Long phone, String password) {
+	        this.fullName = fullName;
+	        this.email = email;
+	        this.phone = phone;
+	        this.password = password;
+	    }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+	    public String getFullName()
+	    { 
+	    	return fullName; 
+	    }
+	    public void setFullName(String fullName) { 
+	    	this.fullName = fullName; 
+	    	}
 
-	public String getEmail() {
-		return email;
-	}
+	    public String getEmail() { 
+	    	return email; 
+	    	}
+	    public void setEmail(String email) { 
+	    	this.email = email; 
+	    	}
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+	    public Long getPhone() { 
+	    	return phone; 
+	    	}
+	    public void setPhone(Long phonel) {
+	    	this.phone = phone; 
+	    	}
 
-	public long getPhone() {
-		return phone;
-	}
-
-	public void setPhone(long phone) {
-		this.phone = phone;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getAddress() {
-		return Address;
-	}
-
-	public void setAddress(String address) {
-		Address = address;
-	}
-
+	    public String getPassword() { 
+	    	return password; 
+	    	}
+	    public void setPassword(String password) { 
+	    	this.password = password; 
+	    	}
 	}
